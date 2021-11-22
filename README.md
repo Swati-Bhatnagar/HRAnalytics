@@ -44,7 +44,7 @@ There is different hierarchy of designation within an organisation that being sa
 •	If the level of one year is different from the next year then we have considered it as promotion.
 •	If the level is not available for any of the years, then we have considered the latest available data for it, and we have considered the level as not changed and not promotion
 
-##FEATURE SELECTION:
+## FEATURE SELECTION:
 •	For categorical features we have chosen Chi Square Test.
 Chi Square – This is used for hypothesis tests about whether your data is as expected. The basic idea behind the test is to compare the observed values in your data to the expected values that you would see if the null hypothesis is true.
 This works by comparing the categorically coded data that you have collected (known as the observed frequencies) with the frequencies that you would expect to get in each cell of a table by chance alone (known as the expected frequencies).
@@ -53,15 +53,15 @@ With 95% confidence that is alpha = 0.05, we will check the calculated Chi-Squar
 •	For employee levels, since it is ordinal, we have chosen to perform label encoding considering Level 10 as the least and level 1 as the highest.
 •	For other categorical features we have done dummification.
 
-##SPLITTING THE DATA INTO TRAINING AND TEST SET:
+## SPLITTING THE DATA INTO TRAINING AND TEST SET:
 We have taken 80% data into training and 20% for testing.
 
-##FEATURE SCALING:
+## FEATURE SCALING:
 For all numerical features we have done using standard scaler and only for training data set.
 SMOTE – synthetic minority over-sampling technique
 In the merged data set, the minority class belongs to the people who have left the organization, so because of this minority issue we have over-sampled the minority class.
 
-##MODEL BUILDING:
+## MODEL BUILDING:
 The process of modeling means training a machine learning algorithm to predict the labels from the features, tuning it for the business need, and validating it on holdout data
 We have used for employee attrition:
 •	Logistic Regression  
@@ -70,11 +70,11 @@ Metrics used for evaluation:
 •	Recall
 •	Confusion matrix
 
-##KEY FINDINGS AND RECOMMENDATIONS
+## KEY FINDINGS AND RECOMMENDATIONS
 •	Based on the features from SVC model, it is clear from the plot that total working hours is one of the biggest reason for employee attrition, followed by promotion and profit centre.
 •	Only Relocation and Training hours have negative correlation
 
-##RECOMMENDATION:
+## RECOMMENDATION:
 •	Total working hours should be reduced to manhour basis Employees can be cross skilled within the teams by which works can be equally shared among the employees.
 •	Employees should be recognized and to be valued with promotions basis skill set, knowledge, performance and experience
 •	Employees after certain time duration tends to change the organization - New hires should be valued and treated properly. To make them feel that manager and company stands for them. Also should make them feel that even small work of him is important to the company
