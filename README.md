@@ -53,18 +53,18 @@ With 95% confidence that is alpha = 0.05, we will check the calculated Chi-Squar
 •	For employee levels, since it is ordinal, we have chosen to perform label encoding considering Level 10 as the least and level 1 as the highest.
 •	For other categorical features we have done dummification.
 
-##Splitting the data into training and test set:
+##SPLITTING THE DATA INTO TRAINING AND TEST SET:
 We have taken 80% data into training and 20% for testing.
 
-## FEATURE SCALING:
+##FEATURE SCALING:
 For all numerical features we have done using standard scaler and only for training data set.
 SMOTE – synthetic minority over-sampling technique
 In the merged data set, the minority class belongs to the people who have left the organization, so because of this minority issue we have over-sampled the minority class.
 
-## Model Building:
+##MODEL BUILDING:
 The process of modeling means training a machine learning algorithm to predict the labels from the features, tuning it for the business need, and validating it on holdout data
 We have used for employee attrition:
-•	  Logistic Regression  
+•	Logistic Regression  
 •	Support vector machine – SVC
 Metrics used for evaluation:
 •	Recall
